@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BodyCulture Tattoo Studio | Custom Tattoos in CBD Belapur, Navi Mumbai</title>
+<meta name="description" content="Plan your tattoo at BodyCulture Tattoo Studio, CBD Belapur, Navi Mumbai. See how each placement feels, what suits it and what it costs, then book a free consultation on WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BodyCulture Tattoo Studio">
+<meta property="og:title" content="BodyCulture Tattoo Studio, CBD Belapur, Navi Mumbai">
+<meta property="og:description" content="Custom tattoos designed and inked by one artist. Plan your placement and book a free consultation.">
+<!-- After going live, change this to the full web address, e.g. https://bodyculture.in/images/og-cover.jpg -->
+<meta property="og:image" content="images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#101315">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23101315'/%3E%3Ccircle cx='32' cy='20' r='8' fill='%23F2BBA0'/%3E%3Crect x='22' y='31' width='20' height='22' rx='8' fill='%23F2BBA0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json" id="ld">
+{
+  "@context": "https://schema.org",
+  "@type": "TattooParlor",
+  "name": "BodyCulture Tattoo Studio",
+  "url": "https://bodyculture.in/",
+  "image": "images/studio.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "103A, 1st Floor, Hilton Centre, Plot 66, Sector 11, near K Star Hotel",
+    "addressLocality": "CBD Belapur, Navi Mumbai",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400614",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 19.014374, "longitude": 73.037831 },
+  "sameAs": ["https://www.instagram.com/_bodyculture_tattoo/"]
+}
+</script>
+
+<style>
+/* ---------------------------------------------------------------
+   Concept: the site is a placement planner.
+   Clients start with their own body: tap a spot, see how it feels,
+   what suits it, real work done there, and a rough price, then
+   book with everything filled in.
+   Graphite background, one skin-tone accent (where the ink goes),
+   one condensed grotesk that carries every heading.
+   --------------------------------------------------------------- */
+:root{
+  color-scheme:dark;
+  --bg:#101315;
+  --surface:#171B1E;
+  --surface-2:#1F2428;
+  --line:#2A3034;
+  --line-2:#3A4247;
+  --text:#E9ECEE;
+  --muted:#99A2A9;
+  --skin:#F2BBA0;
+  --skin-deep:#E09A7C;
+  --on-skin:#1A1210;
+  --part:#252B30;
+  --part-hover:#38414A;
+  --bubble:#243530;
+  --error:#FF9A8A;
+  --font:"Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --max:1240px;
+  --header-h:66px;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none !important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px);-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-underline-offset:.22em}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--skin);outline-offset:3px;border-radius:6px}
+::selection{background:var(--skin);color:var(--on-skin)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:1rem;top:-100px;z-index:100;background:var(--skin);color:var(--on-skin);padding:.6rem 1rem;border-radius:999px;font-weight:700}
+.skip:focus{top:1rem}
+.ic{width:1.15em;height:1.15em;flex:none}
+.wrap{width:min(100% - 2.5rem, var(--max));margin-inline:auto}
+h1,h2,h3{font-family:var(--font);font-weight:760;font-stretch:78%;line-height:.98;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(2.6rem,5.6vw,4.8rem)}
+h2{font-size:clamp(2.4rem,5vw,4.1rem)}
+h3{font-size:1.6rem}
+p{margin:0 0 1rem}
+.lede{color:var(--muted);font-size:1.1rem;max-width:46ch;margin:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:3rem;padding:.75rem 1.35rem;border-radius:999px;border:1px solid transparent;font-weight:650;font-size:1rem;line-height:1.2;text-decoration:none;cursor:pointer;transition:background-color .15s,border-color .15s,color .15s}
+.btn-skin{background:var(--skin);color:var(--on-skin)}
+.btn-skin:hover{background:var(--skin-deep)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--text)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.7rem}
+.chip{flex:none;border:1px solid var(--line-2);background:transparent;color:var(--text);border-radius:999px;padding:.45rem .95rem;font-size:.9rem;font-weight:500;cursor:pointer;white-space:nowrap;transition:background-color .15s,border-color .15s,color .15s}
+.chip:hover{border-color:var(--text)}
+.chip[aria-pressed="true"]{background:var(--skin);border-color:var(--skin);color:var(--on-skin)}
+.round{width:3rem;height:3rem;flex:none;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--text);display:grid;place-items:center;cursor:pointer}
+.round:hover{border-color:var(--text)}
+.round:disabled{opacity:.3;cursor:default}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(16,19,21,.88);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1rem;height:var(--header-h)}
+.brand{font-weight:800;font-stretch:78%;font-size:1.55rem;letter-spacing:-.01em;text-decoration:none;display:inline-flex;align-items:center;gap:.55rem}
+.brand-dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--skin)}
+.nav-links{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-weight:500;color:var(--muted);font-size:.97rem}
+.nav-links a:hover{color:var(--text)}
+.nav-end{display:flex;align-items:center;gap:.5rem}
+.nav .btn{min-height:2.55rem;padding:.5rem 1.1rem;font-size:.95rem}
+.menu-btn{display:none;width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid var(--line-2);background:transparent;align-items:center;justify-content:center;cursor:pointer}
+.menu-btn .ic{width:1.2rem;height:1.2rem}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .nav-links{display:none;position:absolute;top:var(--header-h);left:-1.25rem;right:-1.25rem;flex-direction:column;gap:0;background:var(--bg);padding:.5rem 1.25rem 1.25rem;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -20px rgba(0,0,0,.8)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:.85rem 0;font-size:1.125rem;color:var(--text);border-bottom:1px solid var(--line)}
+}
+@media (max-width:520px){.nav .btn-book{display:none}}
+
+/* ---------- Planner ---------- */
+.planner{padding:clamp(2rem,5vw,3.5rem) 0 clamp(3.5rem,7vw,5.5rem)}
+.planner-head{display:grid;gap:1.1rem;margin-bottom:clamp(1.5rem,3vw,2.5rem)}
+@media (min-width:1000px){.planner-head{grid-template-columns:1.35fr 1fr;align-items:end;gap:3rem}}
+.planner-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
+.planner-grid > *,.book-grid > *,.letter-grid > *,.faq-grid > *{min-width:0}
+@media (min-width:1000px){.planner-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:2rem;align-items:start}}
+.figs{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:clamp(1rem,2.5vw,2rem) clamp(.75rem,2vw,1.75rem) 1.25rem}
+.fig-row{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.fig{margin:0;text-align:center}
+.fig svg{width:100%;height:auto;max-height:min(60vh,540px);display:block;margin:0 auto;overflow:visible}
+.fig figcaption{color:var(--muted);font-size:.88rem;margin-top:.4rem}
+.shape{fill:var(--part);stroke:var(--line-2);stroke-width:1.2;stroke-linejoin:round;transition:fill .18s,stroke .18s}
+.head-shape{fill:#1B2023;stroke:var(--line-2);stroke-width:1.2}
+.part{cursor:pointer;outline:none}
+.part:hover .shape{fill:var(--part-hover)}
+.part:focus-visible .shape{stroke:var(--skin);stroke-width:2.4}
+.part[aria-pressed="true"] .shape{fill:var(--skin);stroke:var(--skin-deep)}
+@media (prefers-reduced-motion:no-preference){
+  .js .fig .shape{opacity:0}
+  .fig-go .fig .shape{animation:appear .45s calc(var(--i) * 40ms) ease-out forwards}
+}
+.fig-done .fig .shape{opacity:1;animation:none}
+@keyframes appear{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.fig-hint{color:var(--muted);font-size:.9rem;margin:1rem 0 .5rem;text-align:center}
+.place-chips{display:flex;gap:.4rem;overflow-x:auto;padding:.25rem .1rem .5rem;scrollbar-width:thin;scrollbar-color:var(--line-2) transparent}
+@media (min-width:1000px){.place-chips{flex-wrap:wrap;justify-content:center;overflow:visible}}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:clamp(1.4rem,3vw,2.25rem);display:grid;gap:1.6rem}
+@media (min-width:1000px){.panel{position:sticky;top:calc(var(--header-h) + 1rem)}}
+.panel-top{display:grid;gap:.9rem}
+.panel h2{font-size:clamp(2.2rem,4vw,3.2rem)}
+.pain{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.pain-label{font-weight:650;font-size:.92rem}
+.segs{display:flex;gap:4px}
+.seg{width:26px;height:10px;border-radius:3px;background:var(--line-2);transition:background-color .2s}
+.seg.on{background:var(--skin)}
+.pain-word{color:var(--muted);font-size:.92rem}
+.place-note{margin:0;font-size:1.05rem;max-width:54ch}
+.sub-label{font-weight:650;font-size:.92rem;margin:0 0 .6rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tag{border:1px solid var(--line-2);border-radius:8px;padding:.3rem .65rem;font-size:.88rem;background:transparent;color:var(--text);cursor:pointer}
+.tag:hover{border-color:var(--skin);color:var(--skin)}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
+.thumb{padding:0;border:0;background:var(--surface-2);border-radius:10px;overflow:hidden;cursor:zoom-in;aspect-ratio:1}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb:disabled{cursor:default}
+.thumb .ph{height:100%;aspect-ratio:auto;padding:.25rem}
+.thumb .ph span,.thumb .ph code{display:none}
+.thumbs-empty{color:var(--muted);font-size:.95rem;margin:0}
+.est-block{border-top:1px solid var(--line);padding-top:1.4rem}
+.size-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
+.size-chips .chip small{opacity:.7;margin-left:.35rem;font-size:.82em}
+.est-controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:end;justify-content:space-between}
+.est-controls .field{min-width:12rem;flex:1}
+.est-result{text-align:right}
+.est-big{display:block;font-weight:760;font-stretch:78%;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1}
+.est-note{color:var(--muted);font-size:.86rem;margin:.6rem 0 0}
+.how{margin-top:1rem;font-size:.92rem}
+.how summary{cursor:pointer;color:var(--muted);font-weight:600}
+.how summary:hover{color:var(--text)}
+.how ul{margin:.75rem 0 0;padding-left:1.1rem;color:var(--muted)}
+.how li{margin-bottom:.3rem}
+
+/* ---------- Work strip ---------- */
+.work{padding:clamp(3.5rem,7vw,6rem) 0;border-top:1px solid var(--line)}
+.work-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1.25rem 2rem;margin-bottom:1.5rem}
+.work-head h2{margin-bottom:.75rem}
+.strip-ctrl{display:flex;gap:.5rem}
+.style-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.75rem}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(230px,26vw,330px);gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:max(1.25rem, calc((100% - var(--max)) / 2));scroll-padding-inline:max(1.25rem, calc((100% - var(--max)) / 2));padding-bottom:1rem;scrollbar-width:thin;scrollbar-color:var(--line-2) transparent;overscroll-behavior-x:contain}
+.card{scroll-snap-align:start;margin:0}
+.card-img{display:block;width:100%;padding:0;border:0;border-radius:16px;overflow:hidden;background:var(--surface-2);cursor:zoom-in}
+.card-img img,.card-img .ph{width:100%;aspect-ratio:4/5;object-fit:cover}
+.card-img:disabled{cursor:default}
+.card figcaption{display:flex;justify-content:space-between;gap:.75rem;margin-top:.65rem;font-size:.92rem}
+.card .c-style{font-weight:650}
+.card .c-place{color:var(--muted);text-align:right}
+.work-foot{margin-top:1.5rem}
+
+/* Empty photo slot */
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;text-align:center;padding:1rem;background:var(--surface-2);color:var(--muted);position:relative;width:100%;aspect-ratio:4/5}
+.ph::after{content:"";position:absolute;inset:8px;border:1px dashed rgba(242,187,160,.4);border-radius:8px;pointer-events:none}
+.ph .ic{width:1.9rem;height:1.9rem;color:var(--skin)}
+.ph span{font-weight:650;font-size:.92rem;color:var(--text)}
+.ph code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.72rem;background:rgba(233,236,238,.07);color:var(--muted);padding:.15rem .4rem;border-radius:4px;overflow-wrap:anywhere}
+
+/* ---------- Artist letter ---------- */
+.letter{padding:clamp(4rem,8vw,7rem) 0;border-top:1px solid var(--line)}
+.letter-grid{display:grid;gap:2rem}
+@media (min-width:900px){.letter-grid{grid-template-columns:280px 1fr;gap:4.5rem;align-items:start}}
+.letter-photo{margin:0;max-width:320px}
+.letter-photo img,.letter-photo .ph{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px}
+.letter h2{margin-bottom:1.75rem}
+.letter-text{font-size:clamp(1.3rem,2.3vw,1.75rem);line-height:1.42;font-weight:350;max-width:36em}
+.letter-text p{margin:0 0 1em}
+.signoff{color:var(--muted);font-size:1rem;margin:0}
+.signoff b{color:var(--text);font-weight:650}
+.promise{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:2rem 0 0}
+.promise li{border:1px solid var(--line-2);border-radius:999px;padding:.45rem .95rem;font-size:.9rem;display:inline-flex;gap:.5rem;align-items:center}
+.promise li::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--skin)}
+.reviews{margin-top:clamp(3rem,6vw,4.5rem);padding-top:2rem;border-top:1px solid var(--line)}
+.reviews-band{display:flex;flex-wrap:wrap;gap:1.25rem 2rem;align-items:center;justify-content:space-between}
+.reviews-band p{margin:0;color:var(--muted)}
+.reviews-band b{color:var(--text);font-weight:650}
+.review-grid{display:grid;gap:1rem}
+@media (min-width:800px){.review-grid{grid-template-columns:repeat(3,1fr)}}
+.review{margin:0;padding:1.4rem;background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.review blockquote{margin:0 0 .9rem}
+.review figcaption{font-weight:650;font-size:.92rem}
+.review figcaption span{color:var(--muted);font-weight:400}
+
+/* ---------- Booking with live message preview ---------- */
+.book{padding:clamp(4rem,8vw,6.5rem) 0;border-top:1px solid var(--line)}
+.book-head{margin-bottom:2rem;display:grid;gap:1rem}
+.offer{display:inline-block;justify-self:start;padding:.45rem .95rem;border-radius:999px;background:var(--skin);color:var(--on-skin);font-weight:650;font-size:.92rem;margin:0}
+.book-grid{display:grid;gap:2rem}
+@media (min-width:980px){.book-grid{grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start}}
+.form{display:grid;gap:1.1rem}
+.form-row{display:grid;gap:1.1rem}
+@media (min-width:620px){.form-row{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:.4rem;align-content:start}
+.field label{font-weight:600;font-size:.9rem}
+.field input,.field select,.field textarea{width:100%;font-size:1rem;padding:.8rem .95rem;border:1px solid var(--line-2);border-radius:12px;background:var(--surface);color:var(--text)}
+.field input::placeholder,.field textarea::placeholder{color:#737C83}
+.field textarea{resize:vertical;min-height:7rem}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--skin);box-shadow:0 0 0 3px rgba(242,187,160,.18)}
+.field [aria-invalid="true"]{border-color:var(--error)}
+.req{color:var(--skin)}
+.check{display:flex;gap:.6rem;align-items:center;font-size:.98rem;cursor:pointer}
+.check input{width:1.15rem;height:1.15rem;accent-color:var(--skin)}
+.form .btn{justify-self:start}
+.form-msg{margin:0;font-size:.95rem;min-height:1.4em}
+.form-msg.error{color:var(--error)}
+.form-msg.ok{color:var(--skin)}
+@media (min-width:980px){.preview{position:sticky;top:calc(var(--header-h) + 1rem)}}
+.phone{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:1.25rem}
+.phone-top{display:flex;align-items:center;gap:.75rem;padding-bottom:1rem;border-bottom:1px solid var(--line);margin-bottom:1.1rem}
+.avatar{width:2.5rem;height:2.5rem;border-radius:50%;background:var(--skin);color:var(--on-skin);display:grid;place-items:center;font-weight:800;font-stretch:78%;font-size:1.1rem}
+.phone-top b{display:block;font-weight:650;line-height:1.2}
+.phone-top span{color:var(--muted);font-size:.84rem}
+.bubble{margin-left:auto;max-width:94%;background:var(--bubble);border-radius:16px 16px 4px 16px;padding:.9rem 1rem;font-size:.94rem;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.bubble .gap{color:var(--muted)}
+.next{margin-top:1.5rem}
+.next h3{font-size:1.25rem;margin-bottom:.75rem}
+.next ol{list-style:none;margin:0;padding:0;counter-reset:n;display:grid;gap:.7rem}
+.next li{counter-increment:n;display:grid;grid-template-columns:1.8rem 1fr;gap:.6rem;color:var(--muted);font-size:.95rem}
+.next li::before{content:counter(n);width:1.6rem;height:1.6rem;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;font-size:.8rem;font-weight:700;color:var(--text)}
+.contact-lines{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:1.5rem 0 0}
+
+/* ---------- FAQ ---------- */
+.faq{padding:clamp(4rem,8vw,6rem) 0;border-top:1px solid var(--line)}
+.faq h2{margin-bottom:2rem}
+.faq-grid{display:grid;gap:0 3rem}
+@media (min-width:900px){.faq-grid{grid-template-columns:1fr 1fr}}
+.faq details{border-top:1px solid var(--line-2)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1.25rem;align-items:center;padding:1.15rem 0;font-weight:600;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:1.6rem;height:1.6rem;border-radius:50%;border:1px solid var(--line-2);background:linear-gradient(var(--text),var(--text)) center/.6rem 1.5px no-repeat,linear-gradient(var(--text),var(--text)) center/1.5px .6rem no-repeat;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg);border-color:var(--skin)}
+.faq details p{color:var(--muted);margin:0 0 1.25rem;max-width:58ch}
+
+/* ---------- Visit: map with a card on top ---------- */
+.visit{padding:clamp(4rem,8vw,6rem) 0;border-top:1px solid var(--line)}
+.visit h2{margin-bottom:2rem}
+.stage{position:relative}
+/* Google's map tiles are light, so this filter turns them dark to match */
+.map{display:block;width:100%;height:clamp(380px,58vh,540px);min-height:0;border:1px solid var(--line);border-radius:20px;background:#E5E7E9;filter:invert(.92) hue-rotate(180deg) saturate(.45) brightness(.9)}
+.visit-card{background:var(--surface);border:1px solid var(--line-2);border-radius:18px;padding:1.4rem;margin-top:1rem;display:grid;gap:1rem}
+@media (min-width:820px){
+  .map{height:clamp(500px,66vh,620px)}
+  .visit-card{position:absolute;left:1.25rem;bottom:1.25rem;margin:0;width:min(430px,48%);gap:.85rem;box-shadow:0 24px 48px -20px rgba(0,0,0,.75)}
+  .visit-photo img,.visit-photo .ph{aspect-ratio:21/9}
+}
+.visit-photo{margin:0}
+.visit-photo img,.visit-photo .ph{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+.visit-photo .ph{gap:.3rem;padding:.5rem}
+.visit address{font-style:normal;line-height:1.5}
+.visit address b{font-weight:650}
+.hours{list-style:none;padding:0;margin:0;font-size:.95rem;color:var(--muted)}
+.hours li{display:flex;justify-content:space-between;gap:1rem}
+
+/* Footer */
+.foot{border-top:1px solid var(--line);padding:2.25rem 0;color:var(--muted);font-size:.9rem}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem}
+.foot p{margin:0}
+.foot ul{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;list-style:none;margin:0;padding:0}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--text)}
+
+/* Mobile contact bar */
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;gap:.6rem;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom,0px));background:rgba(16,19,21,.96);border-top:1px solid var(--line)}
+.mobile-bar .btn{flex:1}
+@media (max-width:760px){
+  .mobile-bar{display:flex}
+  body{padding-bottom:calc(4.6rem + env(safe-area-inset-bottom,0px))}
+}
+
+/* Lightbox */
+.lightbox{border:0;padding:0;background:transparent;max-width:min(92vw,1100px);max-height:94vh;overflow:visible;color:var(--text)}
+.lightbox::backdrop{background:rgba(8,10,11,.95)}
+.lb-inner{display:grid;gap:.9rem;justify-items:center}
+.lb-inner img{max-height:74vh;max-width:min(88vw,1100px);width:auto;border-radius:14px}
+.lb-cap{margin:0;text-align:center;font-size:.95rem}
+.lb-cap span{color:var(--muted)}
+.lb-btn{position:fixed;top:50%;transform:translateY(-50%);width:3rem;height:3rem;border-radius:50%;border:1px solid rgba(233,236,238,.35);background:rgba(16,19,21,.75);color:var(--text);cursor:pointer;display:grid;place-items:center}
+.lb-btn:hover{border-color:var(--text)}
+.lb-prev{left:1rem}
+.lb-next{right:1rem}
+.lb-close{top:1rem;right:1rem;transform:none}
+.lb-btn .ic{width:1.2rem;height:1.2rem}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<!-- Icon set -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 20l1.3-3.9A8 8 0 1 1 8.2 19z"/><path fill="currentColor" d="M9.2 7.6c.3-.1.6 0 .7.3l.8 1.7c.1.3 0 .5-.2.7l-.6.6c.6 1.2 1.6 2.2 2.8 2.8l.6-.6c.2-.2.5-.3.7-.2l1.7.8c.3.1.4.4.3.7-.3 1-1.1 1.6-2 1.5-2.9-.4-5.4-2.9-5.8-5.8-.1-.9.5-1.8 1.5-2z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></g></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#planner" aria-label="BodyCulture Tattoo Studio, back to top"><span class="brand-dot" aria-hidden="true"></span>BodyCulture</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#planner">Plan</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#artist">Artist</a></li>
+      <li><a href="#book">Book</a></li>
+      <li><a href="#faq">Questions</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-end">
+      <a class="btn btn-skin btn-book" href="#book">Book a consultation</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PLACEMENT PLANNER ============ -->
+  <section class="planner" id="planner">
+    <div class="wrap">
+      <div class="planner-head">
+        <h1><span class="sr-only">BodyCulture Tattoo Studio, CBD Belapur, Navi Mumbai. </span>Where's your next tattoo going?</h1>
+        <p class="lede">Tap a spot on the body to see how it feels, what suits it and roughly what it costs. Every tattoo at BodyCulture is designed and inked by one artist in CBD Belapur, Navi Mumbai.</p>
+      </div>
+
+      <div class="planner-grid">
+        <div class="figs">
+          <div class="fig-row">
+            <figure class="fig"><svg id="fig-front" viewBox="0 0 200 470" role="group" aria-label="Body, front view"></svg><figcaption>Front</figcaption></figure>
+            <figure class="fig"><svg id="fig-back" viewBox="0 0 200 470" role="group" aria-label="Body, back view"></svg><figcaption>Back</figcaption></figure>
+          </div>
+          <p class="fig-hint">Or pick a placement</p>
+          <div class="place-chips" id="place-chips" role="group" aria-label="Placements"></div>
+        </div>
+
+        <div class="panel" id="panel" aria-live="polite">
+          <div class="panel-top">
+            <h2 id="p-name">Forearm</h2>
+            <div class="pain">
+              <span class="pain-label">Pain</span>
+              <span class="segs" id="p-segs" aria-hidden="true"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></span>
+              <span class="pain-word" id="p-pain"></span>
+            </div>
+            <p class="place-note" id="p-note"></p>
+          </div>
+          <div>
+            <p class="sub-label">Works well for</p>
+            <div class="tags" id="p-tags"></div>
+          </div>
+          <div>
+            <p class="sub-label" id="p-work-label">Done here at the studio</p>
+            <div class="thumbs" id="p-thumbs"></div>
+            <p class="thumbs-empty" id="p-empty" hidden>No photos from this spot on the site yet. Ask on WhatsApp and the artist can share examples.</p>
+          </div>
+          <div class="est-block">
+            <p class="sub-label">Rough price</p>
+            <div class="size-chips" id="size-chips" role="group" aria-label="Size"></div>
+            <div class="est-controls">
+              <div class="field"><label for="est-d">Detail</label><select id="est-d"></select></div>
+              <div class="est-result"><span class="est-big" id="est-result"></span></div>
+            </div>
+            <p class="est-note" id="est-note"></p>
+            <details class="how">
+              <summary>How pricing works</summary>
+              <ul>
+                <li>Small tattoos start from <span data-price="min"></span>, which covers setup and fresh single-use equipment.</li>
+                <li>Small and medium designs are priced at about <span data-price="rate"></span> per square inch.</li>
+                <li>Sleeves, back pieces and big custom work are quoted per session.</li>
+                <li>Cover-ups are priced once the artist has seen the old tattoo.</li>
+              </ul>
+            </details>
+          </div>
+          <div class="cta-row">
+            <button class="btn btn-skin" type="button" id="plan-btn">Plan a forearm tattoo</button>
+            <a class="btn btn-ghost" data-wa href="#"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Ask on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK STRIP ============ -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="work-head">
+        <div>
+          <h2>Work</h2>
+          <p class="lede">Recent tattoos from the studio. Swipe through, or tap a photo to see it full size.</p>
+        </div>
+        <div class="strip-ctrl">
+          <button class="round" type="button" id="strip-prev" aria-label="Scroll back"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg></button>
+          <button class="round" type="button" id="strip-next" aria-label="Scroll forward"><svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+      <div class="style-chips" id="style-chips" role="group" aria-label="Filter by style"></div>
+    </div>
+    <!-- PHOTO SLOTS (gallery): this strip is built from the PORTFOLIO list in the script near the bottom of this file. -->
+    <div class="strip" id="strip" tabindex="0" aria-label="Tattoo gallery"></div>
+    <div class="wrap work-foot">
+      <a class="btn btn-ghost" data-instagram href="https://www.instagram.com/_bodyculture_tattoo/"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>More on Instagram</a>
+    </div>
+  </section>
+
+  <!-- ============ ARTIST LETTER ============ -->
+  <section class="letter" id="artist">
+    <div class="wrap">
+      <div class="letter-grid">
+        <figure class="letter-photo">
+          <!-- PHOTO SLOT (artist): save the image as images/artist.jpg
+               Best: portrait, about 1200 x 1500 px. The artist in the studio, ideally mid-tattoo. -->
+          <img src="images/artist.jpg" alt="The artist at BodyCulture Tattoo Studio" width="1200" height="1500" loading="lazy">
+        </figure>
+        <div>
+          <h2>One artist, start to finish</h2>
+          <div class="letter-text">
+            <p>BodyCulture is a one-artist studio. There's no hand-off between a front desk, a designer and whoever happens to be free: the person you talk to at your consultation is the person who draws your design and tattoos it.</p>
+            <p>That keeps the design close to your idea, and it means one person stays responsible for how your tattoo heals and how it looks years from now.</p>
+            <!-- EDIT: add 1 or 2 sentences in the artist's own voice here. How they started, what they love tattooing. -->
+          </div>
+          <p class="signoff" id="signoff">The artist, <b>BodyCulture Tattoo Studio</b></p>
+          <ul class="promise">
+            <li>Single-use needles for every client</li>
+            <li>Sterilised setup between sessions</li>
+            <li>Every design drawn for you</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reviews" id="reviews-root"></div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="book" id="book">
+    <div class="wrap">
+      <div class="book-head">
+        <p class="offer" data-offer hidden></p>
+        <h2>Book a free consultation</h2>
+        <p class="lede">Fill this in and watch your message build on the right. Sending opens WhatsApp, where you can attach reference photos.</p>
+      </div>
+      <div class="book-grid">
+        <form class="form" id="book-form" novalidate>
+          <div class="form-row">
+            <div class="field"><label for="f-name">Name <span class="req" aria-hidden="true">*</span></label><input id="f-name" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label><input id="f-phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+          </div>
+          <div class="field"><label for="f-idea">Your idea <span class="req" aria-hidden="true">*</span></label><textarea id="f-idea" rows="4" required placeholder="For example: a fine line lotus with my daughter's name underneath"></textarea></div>
+          <div class="form-row">
+            <div class="field"><label for="f-place">Placement</label><select id="f-place"><option value="">Not sure yet</option></select></div>
+            <div class="field"><label for="f-size">Rough size</label><select id="f-size"><option value="">Not sure yet</option></select></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-style">Style</label><select id="f-style"><option value="">Not sure yet</option></select></div>
+            <div class="field"><label for="f-date">Preferred date</label><input id="f-date" type="date"></div>
+          </div>
+          <label class="check"><input type="checkbox" id="f-first"> This will be my first tattoo</label>
+          <button class="btn btn-skin" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Send on WhatsApp</button>
+          <p class="form-msg" id="form-msg" role="status"></p>
+        </form>
+
+        <aside class="preview" aria-label="Message preview">
+          <div class="phone">
+            <div class="phone-top">
+              <span class="avatar" aria-hidden="true">B</span>
+              <div><b>BodyCulture Tattoo Studio</b><span>Your WhatsApp message</span></div>
+            </div>
+            <div class="bubble" id="bubble"></div>
+          </div>
+          <div class="next">
+            <h3>What happens next</h3>
+            <ol>
+              <li>The artist replies on WhatsApp to set up a free consultation, at the studio or on a call.</li>
+              <li>A deposit locks your date and comes off the final price.</li>
+              <li>On the day, you approve the stencil on your skin before a single line goes in.</li>
+            </ol>
+          </div>
+          <ul class="contact-lines">
+            <li data-phone-wrap><a class="btn btn-ghost" data-phone href="#"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call</a></li>
+            <li><a class="btn btn-ghost" data-instagram href="https://www.instagram.com/_bodyculture_tattoo/"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <div class="faq-grid">
+        <div>
+          <details>
+            <summary>Does getting a tattoo hurt?</summary>
+            <p>A bit. Most people describe it as a hot scratching feeling. Use the planner above to see how different spots compare. You can take a short break whenever you need one.</p>
+          </details>
+          <details>
+            <summary>How should I prepare for my appointment?</summary>
+            <p>Sleep well, eat a proper meal before you come in and drink plenty of water. Skip alcohol for 24 hours beforehand, and wear clothes that make the area easy to reach.</p>
+          </details>
+          <details>
+            <summary>Can you cover up an old tattoo?</summary>
+            <p>Often, yes. Send a clear, well-lit photo of the tattoo on WhatsApp. Darker or larger tattoos may need a bigger design to cover them fully, and you'll get an honest answer about what will work.</p>
+          </details>
+          <details>
+            <summary>What styles do you do?</summary>
+            <p>Fine line, blackwork and mandala, realism and portraits, spiritual designs, lettering, colour and cover-ups. Filter the work above by style to see examples.</p>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary>Do you take walk-ins?</summary>
+            <p>Because one artist does every tattoo, booked appointments come first. Message on WhatsApp to check whether there's a same-day slot.</p>
+          </details>
+          <details>
+            <summary>How old do I need to be?</summary>
+            <p>You need to be 18 or older, and you'll be asked to show a valid photo ID.</p>
+          </details>
+          <details>
+            <summary>How do I look after a new tattoo?</summary>
+            <p>Keep it clean, wash it gently with mild soap and apply a thin layer of the recommended balm. For the first two weeks, avoid swimming, direct sun and picking at any flaking skin. You'll get written instructions on the day.</p>
+          </details>
+          <details>
+            <summary>How is the final price decided?</summary>
+            <p>By size, detail and placement. The planner gives you a rough range, and the exact price is agreed at your free consultation before anything starts.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <h2>Visit the studio</h2>
+      <div class="stage">
+        <iframe class="map" title="Map showing BodyCulture Tattoo Studio in CBD Belapur, Navi Mumbai" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=BodyCulture+Tattoo+Studio,+Hilton+Centre,+Sector+11,+CBD+Belapur,+Navi+Mumbai&z=16&output=embed"></iframe>
+        <div class="visit-card">
+          <figure class="visit-photo">
+            <!-- PHOTO SLOT (studio): save the image as images/studio.jpg
+                 Best: landscape, about 1200 x 675 px. The studio interior or entrance, so people recognise it. -->
+            <img src="images/studio.jpg" alt="Inside BodyCulture Tattoo Studio" width="1200" height="675" loading="lazy">
+          </figure>
+          <address><b>BodyCulture Tattoo Studio</b><br>103A, 1st Floor, Hilton Centre, Plot 66<br>Sector 11, near K Star Hotel<br>CBD Belapur, Navi Mumbai 400614</address>
+          <ul class="hours" id="hours"></ul>
+          <div class="cta-row">
+            <a class="btn btn-skin" data-maps href="#"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Get directions</a>
+            <a class="btn btn-ghost" data-wa href="#"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> BodyCulture Tattoo Studio, CBD Belapur, Navi Mumbai</p>
+    <ul>
+      <li><a data-instagram href="https://www.instagram.com/_bodyculture_tattoo/">Instagram</a></li>
+      <li><a data-maps href="#">Google Maps</a></li>
+      <li><a href="#book">Book</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-ghost" data-phone data-phone-wrap href="#"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-skin" data-wa href="#"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Tattoo photo">
+  <div class="lb-inner">
+    <img id="lb-img" alt="">
+    <p class="lb-cap" id="lb-cap"></p>
+    <a class="btn btn-skin" id="lb-ask" href="#" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Ask about this piece</a>
+  </div>
+  <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Previous photo"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg></button>
+  <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Next photo"><svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+  <button class="lb-btn lb-close" id="lb-close" type="button" aria-label="Close"><svg class="ic" aria-hidden="true"><use href="#i-close"/></svg></button>
+</dialog>
+
+<script>
+/* ==================================================================
+   1. STUDIO DETAILS: fill these in first
+   ================================================================== */
+const CONFIG = {
+  artistName: "",                 // e.g. "Rohan Patil". Used in the artist sign-off.
+  artistRole: "founder and tattoo artist",
+
+  whatsappNumber: "",             // digits only, with country code: "919876543210"
+  phoneNumber: "",                // for Call buttons: "+919876543210". Leave "" to hide them.
+  phoneDisplay: "",               // how it's shown: "+91 98765 43210"
+
+  instagramUrl: "https://www.instagram.com/_bodyculture_tattoo/",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=BodyCulture+Tattoo+Studio+CBD+Belapur",
+
+  // e.g. [["Tuesday to Sunday", "12pm to 9pm"], ["Monday", "Closed"]]
+  hours: [],
+
+  // Optional promo shown above the booking form, e.g. "₹500 off your first tattoo this month"
+  offerText: "",
+
+  // SAMPLE NUMBERS ONLY. Replace with the artist's real rates before going live.
+  pricing: {
+    minimumCharge: 2000,          // smallest tattoo price, in ₹
+    perSquareInch: 500,           // ₹ per square inch
+    detail: {                     // multiplier for each detail level in the estimator
+      "Line work": 1,
+      "Shading or blackwork": 1.3,
+      "Colour or realism": 1.6
+    }
+  }
+};
+
+/* ==================================================================
+   2. TATTOO PHOTOS: this is where the portfolio lives
+   ------------------------------------------------------------------
+   - Put photo files inside the "images" folder next to this file.
+   - One line per photo. Newest first looks best.
+   - "style" must match one of the names in STYLES exactly.
+   - "placement" must be one of these keys, so the photo shows up
+     when someone taps that spot on the body:
+       neck, chest, ribs, upperback, lowerback, upperarm,
+       forearm, hand, thigh, calf, foot
+   - "caption" is optional, e.g. "Fine line peony".
+   - Portrait (4:5) or square photos look best, around 1200 px wide.
+   ================================================================== */
+const STYLES = ["Fine line", "Blackwork & mandala", "Realism & portraits", "Spiritual", "Lettering", "Colour", "Cover-ups"];
+
+const PORTFOLIO = [
+  { src: "images/work-01.jpg", style: "Fine line",           placement: "forearm",   caption: "" },
+  { src: "images/work-02.jpg", style: "Blackwork & mandala", placement: "upperback", caption: "" },
+  { src: "images/work-03.jpg", style: "Realism & portraits", placement: "upperarm",  caption: "" },
+  { src: "images/work-04.jpg", style: "Spiritual",           placement: "forearm",   caption: "" },
+  { src: "images/work-05.jpg", style: "Lettering",           placement: "ribs",      caption: "" },
+  { src: "images/work-06.jpg", style: "Colour",              placement: "thigh",     caption: "" },
+  { src: "images/work-07.jpg", style: "Cover-ups",           placement: "upperarm",  caption: "" },
+  { src: "images/work-08.jpg", style: "Fine line",           placement: "hand",      caption: "" },
+  { src: "images/work-09.jpg", style: "Blackwork & mandala", placement: "chest",     caption: "" },
+  { src: "images/work-10.jpg", style: "Spiritual",           placement: "upperback", caption: "" },
+  { src: "images/work-11.jpg", style: "Realism & portraits", placement: "calf",      caption: "" },
+  { src: "images/work-12.jpg", style: "Lettering",           placement: "neck",      caption: "" }
+];
+
+/* ==================================================================
+   3. REVIEWS (optional): paste real client reviews, e.g. from Google
+   ================================================================== */
+const REVIEWS = [
+  // { name: "Client name", text: "Paste the review text here.", source: "Google" },
+];
+
+/* ==================================================================
+   4. PLACEMENT GUIDE (optional to edit): what the planner says
+      about each spot. Pain is 1 (easy) to 5 (intense).
+   ================================================================== */
+const PLACEMENTS = {
+  neck:      { label: "Neck", pain: 4, goodFor: ["Lettering", "Fine line", "Spiritual"],
+               note: "Thin skin over the spine and throat makes the neck one of the sharper spots. Small lettering and fine line pieces sit well behind the ear or at the nape." },
+  chest:     { label: "Chest", pain: 3, goodFor: ["Blackwork & mandala", "Realism & portraits", "Lettering"],
+               note: "Comfortable over the muscle, sharper over the sternum and collarbones. A strong canvas for symmetrical and portrait work." },
+  ribs:      { label: "Ribs and stomach", pain: 5, goodFor: ["Fine line", "Lettering", "Colour"],
+               note: "Thin skin right over bone that moves with every breath. One of the most intense spots, but fine line and lettering look beautiful here." },
+  upperback: { label: "Upper back", pain: 2, goodFor: ["Realism & portraits", "Blackwork & mandala", "Spiritual"],
+               note: "Thick skin and few nerve endings make the upper back one of the most comfortable places for a large piece." },
+  lowerback: { label: "Lower back", pain: 3, goodFor: ["Blackwork & mandala", "Lettering"],
+               note: "Easy on the sides, a little sharper close to the spine. Works well for wide, symmetrical designs." },
+  upperarm:  { label: "Shoulder and upper arm", pain: 2, goodFor: ["Realism & portraits", "Spiritual", "Cover-ups"],
+               note: "The outer arm and shoulder are among the easiest places to get tattooed, while the inner arm is more tender. A classic spot for half sleeves." },
+  forearm:   { label: "Forearm", pain: 2, goodFor: ["Fine line", "Lettering", "Spiritual"],
+               note: "Easy on the outer forearm, more tender on the inner side and near the wrist. Always on show, which makes it a popular first tattoo." },
+  hand:      { label: "Hand and wrist", pain: 4, goodFor: ["Fine line", "Lettering"],
+               note: "Lots of bone and nerve endings. Hand tattoos also fade faster because the skin works hard, so plan for a touch-up." },
+  thigh:     { label: "Thigh and hip", pain: 2, goodFor: ["Colour", "Realism & portraits", "Blackwork & mandala"],
+               note: "Plenty of cushion and easy to cover. A great spot for larger, detailed pieces." },
+  calf:      { label: "Calf and shin", pain: 3, goodFor: ["Realism & portraits", "Colour", "Spiritual"],
+               note: "The calf is easy, the shin bone is sharper. Good for tall designs that follow the shape of the leg." },
+  foot:      { label: "Ankle and foot", pain: 4, goodFor: ["Fine line", "Lettering"],
+               note: "Thin skin over bone. Shoes rub while it heals, so small designs and a touch-up are normal here." }
+};
+
+/* ---------------- Nothing below this line needs editing ---------------- */
+(function () {
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+  const root = document.documentElement;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const rupees = n => "₹" + Math.round(n).toLocaleString("en-IN");
+  const waLink = text => "https://wa.me/" + (CONFIG.whatsappNumber || "").replace(/\D/g, "") + (text ? "?text=" + encodeURIComponent(text) : "");
+  const SVGNS = "http://www.w3.org/2000/svg";
+  const PAIN_WORDS = ["", "Easy", "Mild", "Moderate", "Sharp", "Intense"];
+  const SIZES = [
+    { key: "sm", label: "Small",  hint: "2 × 2 in",     area: 4,    form: "Small (about 2 inches)" },
+    { key: "md", label: "Medium", hint: "4 × 4 in",     area: 16,   form: "Medium (about 4 inches)" },
+    { key: "lg", label: "Large",  hint: "6 × 6 in",     area: 36,   form: "Large (about 6 inches)" },
+    { key: "xl", label: "Bigger", hint: "sleeve, back", area: null, form: "Sleeve or full piece" }
+  ];
+  const state = { place: "forearm", size: "md" };
+  const failed = new Set();
+
+  /* ---------- Photo helpers ---------- */
+  function toPlaceholder(img) {
+    const ph = document.createElement("div");
+    ph.className = "ph";
+    ph.setAttribute("role", "img");
+    ph.setAttribute("aria-label", "Photo coming soon");
+    ph.innerHTML = '<svg class="ic" aria-hidden="true"><use href="#i-img"/></svg><span>Photo slot</span><code>' + esc(img.getAttribute("src")) + "</code>";
+    img.replaceWith(ph);
+    return ph;
+  }
+  function portfolioImg(i, btn) {
+    const item = PORTFOLIO[i];
+    const img = document.createElement("img");
+    img.alt = (item.caption || item.style + " tattoo") + (PLACEMENTS[item.placement] ? ", " + PLACEMENTS[item.placement].label.toLowerCase() : "");
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.addEventListener("error", () => {
+      failed.add(i);
+      toPlaceholder(img);
+      btn.disabled = true;
+      btn.removeAttribute("aria-label");
+    }, { once: true });
+    btn.appendChild(img);
+    img.src = item.src;
+    if (failed.has(i)) { btn.disabled = true; }
+  }
+  $$("img[src^='images/']").forEach(img => {
+    const fail = () => { if (img.isConnected) toPlaceholder(img); };
+    if (img.loading !== "lazy" && img.complete && img.naturalWidth === 0) fail();
+    else img.addEventListener("error", fail, { once: true });
+  });
+
+  /* ---------- Body figures ---------- */
+  function capsule(x1, y1, x2, y2, r) {
+    const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy) || 1;
+    const nx = -dy / len * r, ny = dx / len * r;
+    const f = n => n.toFixed(2);
+    return "M" + f(x1 + nx) + "," + f(y1 + ny) + " L" + f(x2 + nx) + "," + f(y2 + ny) +
+      " A" + r + "," + r + " 0 0 0 " + f(x2 - nx) + "," + f(y2 - ny) +
+      " L" + f(x1 - nx) + "," + f(y1 - ny) +
+      " A" + r + "," + r + " 0 0 0 " + f(x1 + nx) + "," + f(y1 + ny) + " Z";
+  }
+  const LIMBS = [
+    ["upperarm", 60, 88, 50, 166, 10], ["upperarm", 140, 88, 150, 166, 10],
+    ["forearm", 49, 174, 42, 248, 8.5], ["forearm", 151, 174, 158, 248, 8.5],
+    ["hand", 41, 258, 39, 280, 7], ["hand", 159, 258, 161, 280, 7],
+    ["thigh", 86, 262, 85, 342, 14], ["thigh", 114, 262, 115, 342, 14],
+    ["calf", 85, 354, 85, 428, 10.5], ["calf", 115, 354, 115, 428, 10.5],
+    ["foot", 85, 440, 81, 454, 7], ["foot", 115, 440, 119, 454, 7]
+  ];
+  const TORSO_TOP = "M64,80 Q100,72 136,80 L134,148 Q100,154 66,148 Z";
+  const TORSO_MID = "M67,152 Q100,158 133,152 L130,220 Q100,228 70,220 Z";
+  const HIPS = "M71,224 Q100,232 129,224 L131,248 Q100,258 69,248 Z";
+  const NECK = "M91,58 L109,58 L110,76 L90,76 Z";
+
+  function buildFigure(svg, view) {
+    const shapes = [
+      ["neck", NECK],
+      [view === "front" ? "chest" : "upperback", TORSO_TOP],
+      [view === "front" ? "ribs" : "lowerback", TORSO_MID],
+      ["thigh", HIPS]
+    ].concat(LIMBS.map(l => [l[0], capsule(l[1], l[2], l[3], l[4], l[5])]));
+    const head = document.createElementNS(SVGNS, "ellipse");
+    head.setAttribute("cx", 100); head.setAttribute("cy", 32); head.setAttribute("rx", 19); head.setAttribute("ry", 24);
+    head.setAttribute("class", "shape head-shape");
+    head.style.setProperty("--i", 0);
+    svg.appendChild(head);
+    const groups = {};
+    shapes.forEach((s, idx) => {
+      const key = s[0];
+      if (!groups[key]) {
+        const g = document.createElementNS(SVGNS, "g");
+        g.setAttribute("class", "part");
+        g.setAttribute("data-place", key);
+        g.setAttribute("tabindex", "0");
+        g.setAttribute("role", "button");
+        g.setAttribute("aria-label", PLACEMENTS[key].label + " (" + view + ")");
+        g.setAttribute("aria-pressed", "false");
+        groups[key] = g;
+        svg.appendChild(g);
+      }
+      const p = document.createElementNS(SVGNS, "path");
+      p.setAttribute("d", s[1]);
+      p.setAttribute("class", "shape");
+      p.style.setProperty("--i", idx + 1);
+      groups[key].appendChild(p);
+    });
+  }
+  buildFigure($("#fig-front"), "front");
+  buildFigure($("#fig-back"), "back");
+
+  function startFigures() {
+    if (reduce) return;
+    root.classList.add("fig-go");
+    setTimeout(() => root.classList.add("fig-done"), 1500);
+  }
+  if (document.fonts && document.fonts.ready) {
+    Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1200))]).then(startFigures);
+  } else startFigures();
+
+  $$(".part").forEach(g => {
+    g.addEventListener("click", () => selectPlace(g.dataset.place, true));
+    g.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); selectPlace(g.dataset.place, false); }
+    });
+  });
+
+  const placeChips = $("#place-chips");
+  Object.keys(PLACEMENTS).forEach(key => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.dataset.place = key;
+    b.textContent = PLACEMENTS[key].label;
+    b.addEventListener("click", () => selectPlace(key, true));
+    placeChips.appendChild(b);
+  });
+
+  /* ---------- Placement panel ---------- */
+  const panel = $("#panel");
+  function selectPlace(key, fromTap) {
+    const P = PLACEMENTS[key];
+    if (!P) return;
+    state.place = key;
+    $$(".part").forEach(g => g.setAttribute("aria-pressed", String(g.dataset.place === key)));
+    $$(".chip", placeChips).forEach(c => c.setAttribute("aria-pressed", String(c.dataset.place === key)));
+    $("#p-name").textContent = P.label;
+    $$(".seg", $("#p-segs")).forEach((s, i) => s.classList.toggle("on", i < P.pain));
+    $("#p-pain").textContent = PAIN_WORDS[P.pain] + ", " + P.pain + " out of 5. Everyone feels it differently.";
+    $("#p-note").textContent = P.note;
+    const tags = $("#p-tags");
+    tags.textContent = "";
+    P.goodFor.forEach(s => {
+      const t = document.createElement("button");
+      t.type = "button";
+      t.className = "tag";
+      t.textContent = s;
+      t.setAttribute("aria-label", "See " + s + " work");
+      t.addEventListener("click", () => { applyStyle(STYLES.includes(s) ? s : "All"); $("#work").scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); });
+      tags.appendChild(t);
+    });
+    const thumbs = $("#p-thumbs");
+    thumbs.textContent = "";
+    const here = PORTFOLIO.map((p, i) => i).filter(i => PORTFOLIO[i].placement === key).slice(0, 4);
+    $("#p-empty").hidden = here.length > 0;
+    thumbs.hidden = here.length === 0;
+    here.forEach(i => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "thumb";
+      b.setAttribute("aria-label", "View " + (PORTFOLIO[i].caption || PORTFOLIO[i].style + " tattoo") + " larger");
+      b.addEventListener("click", () => openLightbox(here, here.indexOf(i)));
+      portfolioImg(i, b);
+      thumbs.appendChild(b);
+    });
+    $("#plan-btn").textContent = "Plan " + (/^[aeiou]/i.test(P.label) ? "an " : "a ") + P.label.toLowerCase() + " tattoo";
+    estimate();
+    if (fromTap && window.innerWidth < 1000) {
+      const r = panel.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.6) panel.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    }
+  }
+
+  /* ---------- Estimator ---------- */
+  const PR = CONFIG.pricing;
+  $$("[data-price='min']").forEach(el => { el.textContent = rupees(PR.minimumCharge); });
+  $$("[data-price='rate']").forEach(el => { el.textContent = rupees(PR.perSquareInch); });
+  const sizeChips = $("#size-chips");
+  SIZES.forEach(s => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.dataset.size = s.key;
+    b.innerHTML = esc(s.label) + "<small>" + esc(s.hint) + "</small>";
+    b.setAttribute("aria-pressed", String(s.key === state.size));
+    b.addEventListener("click", () => {
+      state.size = s.key;
+      $$(".chip", sizeChips).forEach(c => c.setAttribute("aria-pressed", String(c.dataset.size === s.key)));
+      estimate();
+    });
+    sizeChips.appendChild(b);
+  });
+  const detailSel = $("#est-d");
+  Object.keys(PR.detail).forEach(k => detailSel.add(new Option(k, k)));
+  detailSel.addEventListener("input", estimate);
+  function estimate() {
+    const size = SIZES.find(s => s.key === state.size);
+    const out = $("#est-result"), note = $("#est-note");
+    const base = "A rough guide. The exact price is agreed at your free consultation.";
+    if (!size.area) {
+      out.textContent = "Per session";
+      note.textContent = "Big pieces are done over more than one session and quoted after a consultation.";
+      return;
+    }
+    const raw = size.area * PR.perSquareInch * (PR.detail[detailSel.value] || 1);
+    if (raw <= PR.minimumCharge) {
+      out.textContent = rupees(PR.minimumCharge);
+      note.textContent = "This size falls under the minimum charge. " + base;
+    } else {
+      out.textContent = rupees(Math.round(raw * 0.9 / 100) * 100) + " to " + rupees(Math.round(raw * 1.2 / 100) * 100);
+      note.textContent = base;
+    }
+  }
+
+  /* ---------- Work strip ---------- */
+  const strip = $("#strip");
+  const cards = PORTFOLIO.map((item, i) => {
+    const fig = document.createElement("figure");
+    fig.className = "card";
+    fig.dataset.style = item.style;
+    fig.dataset.index = i;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "card-img";
+    btn.setAttribute("aria-label", "View " + (item.caption || item.style + " tattoo") + " larger");
+    portfolioImg(i, btn);
+    const cap = document.createElement("figcaption");
+    const placeLabel = PLACEMENTS[item.placement] ? PLACEMENTS[item.placement].label : "";
+    cap.innerHTML = '<span class="c-style">' + esc(item.caption || item.style) + '</span><span class="c-place">' + esc(item.caption ? item.style : placeLabel) + "</span>";
+    fig.appendChild(btn);
+    fig.appendChild(cap);
+    strip.appendChild(fig);
+    return fig;
+  });
+  const styleChips = $("#style-chips");
+  const usedStyles = STYLES.filter(s => PORTFOLIO.some(p => p.style === s));
+  function applyStyle(style) {
+    $$(".chip", styleChips).forEach(c => c.setAttribute("aria-pressed", String(c.dataset.style === style)));
+    cards.forEach(c => { c.hidden = !(style === "All" || c.dataset.style === style); });
+    strip.scrollTo({ left: 0, behavior: "auto" });
+    updateArrows();
+  }
+  ["All"].concat(usedStyles).forEach(s => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.dataset.style = s;
+    b.textContent = s;
+    b.setAttribute("aria-pressed", String(s === "All"));
+    b.addEventListener("click", () => applyStyle(s));
+    styleChips.appendChild(b);
+  });
+  const prevBtn = $("#strip-prev"), nextBtn = $("#strip-next");
+  function stepSize() {
+    const c = cards.find(c => !c.hidden);
+    return c ? c.getBoundingClientRect().width + 16 : 300;
+  }
+  function updateArrows() {
+    prevBtn.disabled = strip.scrollLeft < 4;
+    nextBtn.disabled = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 4;
+  }
+  prevBtn.addEventListener("click", () => strip.scrollBy({ left: -stepSize() * 2, behavior: reduce ? "auto" : "smooth" }));
+  nextBtn.addEventListener("click", () => strip.scrollBy({ left: stepSize() * 2, behavior: reduce ? "auto" : "smooth" }));
+  strip.addEventListener("scroll", () => requestAnimationFrame(updateArrows), { passive: true });
+  window.addEventListener("resize", updateArrows);
+  strip.addEventListener("click", e => {
+    const btn = e.target.closest(".card-img");
+    if (!btn || btn.disabled) return;
+    const list = cards.filter(c => !c.hidden).map(c => Number(c.dataset.index));
+    openLightbox(list, list.indexOf(Number(btn.closest(".card").dataset.index)));
+  });
+  updateArrows();
+
+  /* ---------- Lightbox ---------- */
+  const lb = $("#lightbox"), lbImg = $("#lb-img"), lbCap = $("#lb-cap"), lbAsk = $("#lb-ask");
+  let lbList = [], lbPos = 0;
+  function openLightbox(list, pos) {
+    lbList = list.filter(i => !failed.has(i));
+    if (!lbList.length) return;
+    lbPos = Math.max(0, lbList.indexOf(list[pos]));
+    showLb();
+    if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
+  }
+  function showLb() {
+    const i = lbList[lbPos], item = PORTFOLIO[i];
+    const placeLabel = PLACEMENTS[item.placement] ? PLACEMENTS[item.placement].label : "";
+    lbImg.src = item.src;
+    lbImg.alt = item.caption || item.style + " tattoo";
+    lbCap.innerHTML = esc(item.caption || item.style) + (placeLabel ? ' <span>' + esc(placeLabel) + "</span>" : "");
+    lbAsk.href = waLink("Hi BodyCulture, I saw this " + item.style.toLowerCase() + " piece" + (placeLabel ? " on the " + placeLabel.toLowerCase() : "") + " on your website (photo " + (i + 1) + "). I'd like something similar.");
+  }
+  function stepLb(d) { if (!lbList.length) return; lbPos = (lbPos + d + lbList.length) % lbList.length; showLb(); }
+  $("#lb-prev").addEventListener("click", () => stepLb(-1));
+  $("#lb-next").addEventListener("click", () => stepLb(1));
+  $("#lb-close").addEventListener("click", () => lb.close());
+  lb.addEventListener("keydown", e => { if (e.key === "ArrowLeft") stepLb(-1); if (e.key === "ArrowRight") stepLb(1); });
+  lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+
+  /* ---------- Booking form + live preview ---------- */
+  const fPlace = $("#f-place"), fSize = $("#f-size"), fStyle = $("#f-style");
+  Object.keys(PLACEMENTS).forEach(k => fPlace.add(new Option(PLACEMENTS[k].label, PLACEMENTS[k].label)));
+  fPlace.add(new Option("Somewhere else", "Somewhere else"));
+  SIZES.forEach(s => fSize.add(new Option(s.form, s.form)));
+  STYLES.forEach(s => fStyle.add(new Option(s, s)));
+  const today = new Date();
+  $("#f-date").min = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  const val = id => $("#" + id).value.trim();
+
+  function messageLines(forPreview) {
+    const gap = t => forPreview ? "[" + t + "]" : "";
+    const date = val("f-date");
+    const niceDate = date ? new Date(date + "T00:00").toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short", year: "numeric" }) : "";
+    const lines = [
+      "Hi BodyCulture, I'd like to book a free consultation.",
+      "",
+      "Name: " + (val("f-name") || gap("your name")),
+      "Phone: " + (val("f-phone") || gap("your number")),
+      "Idea: " + (val("f-idea") || gap("describe your tattoo"))
+    ];
+    if (val("f-place")) lines.push("Placement: " + val("f-place"));
+    if (val("f-size")) lines.push("Size: " + val("f-size"));
+    if (val("f-style")) lines.push("Style: " + val("f-style"));
+    if (niceDate) lines.push("Preferred date: " + niceDate);
+    if ($("#f-first").checked) lines.push("This will be my first tattoo.");
+    return lines;
+  }
+  const bubble = $("#bubble");
+  function renderPreview() {
+    bubble.innerHTML = messageLines(true).map(l => esc(l).replace(/\[(.+?)\]/g, '<span class="gap">$1</span>')).join("\n");
+  }
+  $$("#book-form input, #book-form select, #book-form textarea").forEach(el => {
+    el.addEventListener("input", renderPreview);
+    el.addEventListener("change", renderPreview);
+  });
+  renderPreview();
+
+  $("#plan-btn").addEventListener("click", () => {
+    fPlace.value = PLACEMENTS[state.place].label;
+    fSize.value = SIZES.find(s => s.key === state.size).form;
+    renderPreview();
+    $("#book").scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+    setTimeout(() => $("#f-name").focus({ preventScroll: true }), reduce ? 0 : 600);
+  });
+
+  const form = $("#book-form"), msg = $("#form-msg");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const checks = [
+      ["f-name", !!val("f-name"), "your name"],
+      ["f-phone", val("f-phone").replace(/\D/g, "").length >= 10, "a phone number"],
+      ["f-idea", !!val("f-idea"), "your idea"]
+    ];
+    checks.forEach(c => $("#" + c[0]).setAttribute("aria-invalid", String(!c[1])));
+    const missing = checks.filter(c => !c[1]);
+    if (missing.length) {
+      const words = missing.map(c => c[2]);
+      const list = words.length > 1 ? words.slice(0, -1).join(", ") + " and " + words[words.length - 1] : words[0];
+      msg.className = "form-msg error";
+      msg.textContent = "Add " + list + " so the artist can reply.";
+      $("#" + missing[0][0]).focus();
+      return;
+    }
+    window.open(waLink(messageLines(false).join("\n")), "_blank", "noopener");
+    msg.className = "form-msg ok";
+    msg.textContent = "WhatsApp opened in a new tab. Attach any reference photos there and press send to finish booking.";
+  });
+
+  /* ---------- Contact details, hours, reviews ---------- */
+  $$("[data-wa]").forEach(a => { a.href = waLink("Hi BodyCulture, I'd like to ask about a tattoo."); a.target = "_blank"; a.rel = "noopener"; });
+  $$("[data-instagram]").forEach(a => { a.href = CONFIG.instagramUrl; a.target = "_blank"; a.rel = "noopener"; });
+  $$("[data-maps]").forEach(a => { a.href = CONFIG.mapsUrl; a.target = "_blank"; a.rel = "noopener"; });
+  if (CONFIG.phoneNumber) {
+    $$("[data-phone]").forEach(a => { a.href = "tel:" + CONFIG.phoneNumber.replace(/[^\d+]/g, ""); });
+  } else {
+    $$("[data-phone-wrap]").forEach(el => { el.hidden = true; });
+  }
+  if (CONFIG.artistName) $("#signoff").innerHTML = "<b>" + esc(CONFIG.artistName) + "</b>, " + esc(CONFIG.artistRole);
+  const offerEl = $("[data-offer]");
+  if (CONFIG.offerText) { offerEl.textContent = CONFIG.offerText; offerEl.hidden = false; }
+  $("#hours").innerHTML = CONFIG.hours.length
+    ? CONFIG.hours.map(h => "<li><span>" + esc(h[0]) + "</span><span>" + esc(h[1]) + "</span></li>").join("")
+    : "<li>Message on WhatsApp for today's hours</li>";
+  $("#year").textContent = new Date().getFullYear();
+
+  const reviewsRoot = $("#reviews-root");
+  if (REVIEWS.length) {
+    reviewsRoot.innerHTML = '<div class="review-grid">' + REVIEWS.map(r =>
+      '<figure class="review"><blockquote>' + esc(r.text) + '</blockquote><figcaption>' + esc(r.name) +
+      (r.source ? ' <span>on ' + esc(r.source) + '</span>' : '') + '</figcaption></figure>').join("") + '</div>';
+  } else {
+    reviewsRoot.innerHTML = '<div class="reviews-band"><p><b>Heard about us from a friend?</b> Read what clients say on Google, or see healed work on Instagram.</p>' +
+      '<div class="cta-row"><a class="btn btn-ghost" href="' + esc(CONFIG.mapsUrl) + '" target="_blank" rel="noopener">Google reviews</a>' +
+      '<a class="btn btn-ghost" href="' + esc(CONFIG.instagramUrl) + '" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></div></div>';
+  }
+
+  try {
+    const ld = $("#ld");
+    const data = JSON.parse(ld.textContent);
+    if (CONFIG.phoneNumber) data.telephone = CONFIG.phoneNumber;
+    ld.textContent = JSON.stringify(data);
+  } catch (e) {}
+
+  /* ---------- Mobile menu ---------- */
+  const menuBtn = $(".menu-btn"), navLinks = $("#nav-links");
+  function setMenu(open) {
+    navLinks.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    menuBtn.innerHTML = '<svg class="ic" aria-hidden="true"><use href="#i-' + (open ? "close" : "menu") + '"/></svg>';
+  }
+  menuBtn.addEventListener("click", () => setMenu(!navLinks.classList.contains("open")));
+  navLinks.addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && navLinks.classList.contains("open")) { setMenu(false); menuBtn.focus(); } });
+
+  selectPlace(state.place, false);
+})();
+</script>
+</body>
+</html>
